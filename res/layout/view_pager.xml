@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff" >
+
+    <RelativeLayout
+        android:id="@+id/head_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:gravity="bottom"
+        android:padding="5dip" >
+
+        <TextView
+            android:id="@+id/name_textview"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:gravity="center"           
+            android:text="People-safe"
+            android:textColor="#ff000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/showLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"/>
+
+         <ImageView
+             android:id="@+id/read"
+             android:layout_width="10dp"
+             android:layout_height="10dp"
+             android:layout_marginLeft="25dp"
+              android:layout_marginTop="5dp"
+             android:src="@drawable/read" 
+             android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/head_layout"
+        android:background="@color/bg_color_deep" >
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/corners_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/liear23"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tub"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:background="@drawable/icon_gcoding" 
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/location1"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:text="正在定位..."
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="2px"
+            layout="@layout/line" >
+        </include>
+        
+     <RelativeLayout
+         android:id="@+id/liear123"
+         android:layout_width="fill_parent"
+         android:layout_height="60dp" >
+
+        <TextView
+            android:id="@+id/zoomlevel"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:layout_marginRight="36dp"
+            android:layout_toRightOf="@+id/baojing"
+            android:background="@drawable/corners_bg3"
+            android:gravity="center"
+            android:text=" -    |   + "
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+         <TextView
+             android:id="@+id/share"
+             android:layout_width="45dp"
+             android:layout_height="45dp"
+             android:layout_alignParentBottom="true"
+             android:layout_alignParentLeft="true"
+             android:layout_margin="5dp"
+             android:background="@drawable/corners_bg2"
+             android:gravity="center"
+             android:text="+"
+             android:textColor="#ffffff"
+             android:textSize="30dp" />
+
+         <TextView
+             android:id="@+id/baojing"
+             android:layout_width="wrap_content"
+             android:layout_height="45dp"
+             android:layout_alignParentBottom="true"
+             android:layout_centerHorizontal="true"
+             android:layout_margin="5dp"
+             android:background="@drawable/corners_bg2"
+             android:gravity="center"
+             android:text="    Callalarm    "
+             android:textColor="#ffffff"
+             android:textSize="20sp" />
+
+    </RelativeLayout>
+    
+  </LinearLayout>
+</RelativeLayout>

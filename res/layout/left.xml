@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mlist"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_color_deep" >
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="fill_parent"
+        android:background="@color/bg_color_deep"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip" >
+
+            <ImageView
+                android:id="@+id/head_view"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/xiaotiger" />
+
+            <requestFocus />
+
+            <TextView
+                android:id="@+id/name_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/head_view"
+                android:layout_marginLeft="28dp"
+                android:layout_toRightOf="@+id/head_view"
+                android:text="NAME"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/head_view"
+                android:layout_alignLeft="@+id/name_textview"
+                android:layout_alignRight="@+id/name_textview"
+                android:gravity="center"
+                android:text="请登录"
+                android:textColor="@color/text_color"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/mytextview"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="80dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="乐居出品"
+            android:textColor="@color/text_color"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:id="@+id/rl123"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_marginTop="29dp" >
+
+            <TextView
+                android:id="@+id/record"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="我的记录"
+                android:textColor="@color/text_color"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/red"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_toRightOf="@+id/my_question_textview"
+                android:src="@drawable/read"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:layout_alignBottom="@+id/rl123"
+            android:layout_alignParentLeft="true"
+            layout="@layout/line" />
+
+        <TextView
+            android:id="@+id/tzhi"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/rl123"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="通知"
+            android:textColor="@color/text_color"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/knowledge"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tzhi"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="安全知识"
+            android:textColor="@color/text_color"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/return001"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="22dp"
+            android:src="@drawable/about" />
+
+        <TextView
+            android:id="@+id/set"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/knowledge"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="设置"
+            android:textColor="@color/text_color"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_above="@+id/mytextview"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="关于-版本号1.0"
+            android:textColor="@color/text_color"
+            android:textSize="15sp" />
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:layout_alignBottom="@+id/tzhi"
+            android:layout_alignParentLeft="true"
+            layout="@layout/line" />
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:layout_alignParentLeft="true"
+              android:layout_alignBottom="@+id/knowledge"
+            layout="@layout/line" />
+
+        <include
+            android:id="@+id/include1"
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:layout_alignBottom="@+id/set"
+            android:layout_alignParentLeft="true"
+            layout="@layout/line" />
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/mytextview"
+            layout="@layout/line" />
+
+     
+
+    </RelativeLayout>
+
+</RelativeLayout>

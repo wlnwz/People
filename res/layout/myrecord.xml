@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffdbdbdb"
+    android:gravity="left"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:gravity="bottom"
+        android:padding="5dip" >
+
+        <TextView
+            android:id="@+id/return001"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/return001" />
+
+        <TextView
+            android:id="@+id/name_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="报警记录"
+            android:textColor="#ff000000"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/Listview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_marginBottom="10dp"
+        android:divider="@null"
+        android:fadingEdge="none" >
+    </ListView>
+
+    <include
+        android:id="@+id/include2"
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:layout_alignBottom="@+id/relativeLayout1"
+        android:layout_alignParentLeft="true"
+        layout="@layout/line" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:background="#fff"
+        android:padding="5dip" >
+
+        <TextView
+            android:id="@+id/choose03"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/include4"
+            android:layout_marginRight="18dp"
+            android:layout_toLeftOf="@+id/choose04"
+            android:gravity="center"
+            android:text="已评分"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/choose02"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignBaseline="@+id/choose01"
+            android:layout_alignBottom="@+id/choose01"
+            android:layout_marginLeft="26dp"
+            android:layout_toRightOf="@+id/choose01"
+            android:gravity="center"
+            android:text="在处理"
+            android:textSize="15sp" />
+
+        <include
+            android:id="@+id/include1"
+            android:layout_width="2px"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            layout="@layout/line" />
+
+        <TextView
+            android:id="@+id/choose01"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/include1"
+            android:gravity="center"
+            android:background="@drawable/back"
+            android:text="未受理"
+            android:textSize="15sp" 
+            android:textColor="@color/blue"/>
+
+        <TextView
+            android:id="@+id/choose04"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignBaseline="@+id/choose03"
+            android:layout_alignBottom="@+id/choose03"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dp"
+            android:gravity="center"
+            android:text="未评分"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff" >
+
+    <RelativeLayout
+        android:id="@+id/liear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="#fff" >
+
+        <ImageView
+            android:id="@+id/share1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/search"
+            android:layout_marginLeft="36dp"
+            android:src="@drawable/share" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/share1"
+            android:layout_below="@+id/search"
+            android:text="  分享              搜索  "
+            android:textColor="@color/blue"
+            android:textSize="18dp" />
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/text"
+            android:src="@drawable/search" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/liear2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:background="#fff" >
+
+        <AutoCompleteTextView
+            android:id="@+id/edittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:cursorVisible="true"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint=" soso..."
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:textSize="30dp"
+            android:textColor="@color/blue"
+            android:visibility="gone" >
+
+        </AutoCompleteTextView>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list1"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/liear2"
+        android:background="#FFFFFF"
+        android:visibility="gone" >
+    </ListView>
+
+</RelativeLayout>

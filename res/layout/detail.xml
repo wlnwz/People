@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffdbdbdb"
+    android:gravity="left"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:gravity="bottom"
+        android:padding="5dip" >
+
+        <TextView
+            android:id="@+id/return001"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/return001" />
+
+        <TextView
+            android:id="@+id/name_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="案件流程"
+            android:textColor="#ff000000"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/include2"
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:layout_alignBottom="@+id/relativeLayout1"
+        android:layout_alignParentLeft="true"
+        layout="@layout/line" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:background="#fff"
+        android:padding="5dip" >
+
+        <TextView
+            android:id="@+id/state"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back"
+            android:gravity="center"
+            android:text="未受理"
+            android:textColor="@color/blue"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/include2"
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:layout_alignBottom="@+id/relativeLayout2"
+        android:layout_alignParentLeft="true"
+        layout="@layout/line" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout2"
+        android:background="@drawable/timeline" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/relativelayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/call123"
+                    android:layout_width="130dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="22dp"
+                    android:background="@drawable/recordframe2"
+                    android:gravity="center"
+                    android:text="报案！"
+                   
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/waiting123"
+                    android:layout_width="130dp"
+                    android:layout_height="70dp"
+                    android:layout_alignLeft="@+id/call123"
+                    android:layout_below="@+id/receive123"
+                    android:background="@drawable/recordframe2"
+                    android:gravity="center"
+                    android:text="waiting..."
+               
+                    android:textSize="15sp" 
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/receive123"
+                    android:layout_width="130dp"
+                    android:layout_height="80dp"
+                    android:layout_alignTop="@+id/call123"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="65dp"
+                    android:layout_toRightOf="@+id/call123"
+                    android:background="@drawable/recordframe"
+                    android:gravity="center"
+                    android:text="未受理"
+                    android:textColor="@color/blue"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativelayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/record123"
+                    android:layout_width="130dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/finish123"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/recordframe2"
+                    android:gravity="center"
+                    android:text="去评价？"
+                   
+                    android:textSize="15sp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/finish123"
+                    android:layout_width="130dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="35dp"
+                    android:layout_toRightOf="@+id/record123"
+                    android:background="@drawable/recordframe"
+                    android:gravity="center"
+                    android:text="处理完毕"
+                    android:textColor="@color/blue"
+                    android:textSize="15sp"
+                android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

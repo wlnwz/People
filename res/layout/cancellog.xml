@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+   
+    android:orientation="vertical"
+      android:background="@color/bg_color_deep" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:background="#90ee90" >
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="35.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8.0dip"
+            android:background="#90ee90"
+            android:gravity="center"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:text="取消"
+            android:textColor="#ffffffff"
+            android:textSize="14.0dip"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/center_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="我的账户"
+            android:textColor="#ffffffff"
+            android:textSize="18.0dip"
+            android:textStyle="bold" />
+    </RelativeLayout>
+ 
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout1"
+       >
+
+        <ImageView
+            android:id="@+id/inforimage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" 
+            android:src="@drawable/xiaotiger"/>
+
+        <TextView
+            android:id="@+id/userinfor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/inforimage"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="用户名"
+            android:textColor="@color/gray"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+ <TextView
+     android:id="@+id/telinfor"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentLeft="true"
+     android:layout_below="@+id/relativeLayout2"
+     android:layout_marginLeft="30dp"
+     android:layout_marginTop="22dp"
+     android:gravity="center"
+     android:text="电话:"
+     android:textColor="@color/gray"
+     android:textSize="20dp" />
+
+ <RelativeLayout
+     android:id="@+id/relativeLayout10"
+     android:layout_width="fill_parent"
+     android:layout_height="42.0dip"
+     android:layout_alignParentBottom="true"
+     android:layout_alignParentLeft="true"
+     android:layout_marginBottom="38dp">
+
+     <Button
+         android:id="@+id/cancelbutton"
+         android:layout_width="fill_parent"
+         android:layout_height="42.0dip"
+         android:layout_alignParentBottom="true"
+         android:layout_centerHorizontal="true"
+         android:layout_marginLeft="20dp"
+         android:background="#ff6347"
+         android:text="注销登陆"
+         android:textColor="@color/white"
+         android:textSize="18.0dip" />
+ </RelativeLayout>
+    
+</RelativeLayout>

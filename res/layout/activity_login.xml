@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fffafafa"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:background="#90ee90" >
+
+        <TextView
+            android:id="@+id/login_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="35.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8.0dip"
+            android:background="#90ee90"
+            android:gravity="center"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:text="取消"
+            android:textColor="#ffffffff"
+            android:textSize="14.0dip"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/center_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="登录账户"
+            android:textColor="#ffffffff"
+            android:textSize="18.0dip"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/register_text"
+            android:layout_width="wrap_content"
+            android:layout_height="35.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8.0dip"
+            android:background="#90ee90"
+            android:gravity="center"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:text="注册"
+            android:textColor="#ffffffff"
+            android:textSize="14.0dip"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10.0dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="58.0dip"
+                android:layout_height="wrap_content"
+                android:text="账　号"
+                android:textColor="#ff404040"
+                android:textSize="16.0dip" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip" >
+
+                <EditText
+                    android:id="@+id/LoginName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:hint="请输入您的账号"
+                    android:imeOptions="actionNext"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="30.0dip"
+                    android:singleLine="true"
+                    android:textSize="16.0dip" />
+
+                <ImageView
+                    android:id="@+id/login_name_clear_btn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:paddingLeft="5.0dip"
+                    android:paddingRight="5.0dip"
+                    android:src="@drawable/delete"
+                     android:visibility="gone" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/usernameerrorid"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="58.0dip"
+            android:text="error"
+            android:textColor="#ffff0000"
+            android:textSize="13.0dip"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13.0dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="58.0dip"
+                android:layout_height="wrap_content"
+                android:text="密　码"
+                android:textColor="#ff404040"
+                android:textSize="16.0dip" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip" >
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip"
+                    android:hint="请输入您的密码"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:maxLength="16"
+                    android:paddingLeft="10.0dip"
+                    android:singleLine="true"
+                    android:textSize="16.0dip" />
+
+                <ImageView
+                    android:id="@+id/clear_btn2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:paddingLeft="5.0dip"
+                    android:paddingRight="5.0dip"
+                    android:src="@drawable/delete"
+                     android:visibility="gone" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/passworderrorid"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="58.0dip"
+            android:text="error"
+            android:textColor="#ffff0000"
+            android:textSize="13.0dip"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13.0dip"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <CheckBox
+                    android:id="@+id/keepsecret"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="记住密码"
+                    android:textColor="#ff404040"
+                    android:textSize="16.0dip" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout10"
+                android:layout_width="fill_parent"
+                android:layout_height="42.0dip"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="38dp"
+                android:background="@color/white" >
+
+                <Button
+                    android:id="@+id/BtnMenulogin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="42.0dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="#ff6347"
+                    android:text="登录"
+                    android:textColor="@color/white"
+                    android:textSize="18.0dip" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="16dp" >
+
+                <CheckBox
+                    android:id="@+id/autologin"
+                    android:layout_width="34.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:checked="false" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="自动登录"
+                    android:textColor="#ff404040"
+                    android:textSize="16.0dip" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/recode_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/linearLayout2"
+                android:layout_below="@+id/linearLayout2"
+                android:layout_marginTop="22dp"
+                android:text="忘记密码"
+                android:textSize="16.0dip" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

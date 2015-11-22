@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ffdbdbdb"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeshow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:singleLine="true" >
+
+        <TextView
+            android:id="@+id/show123"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="今天"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativelay456"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeshow"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#ffffff"
+        android:singleLine="true" >
+
+        <RelativeLayout
+            android:id="@+id/relativelay123"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="6dp"
+            android:background="#ffffff"
+            android:singleLine="true" >
+
+            <TextView
+                android:id="@+id/image"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/xiaotiger"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/array_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/array_text"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/image"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text=" 今天 16:33"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/array_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/array_text2"
+                android:layout_alignTop="@+id/image"
+                android:layout_marginLeft="3dp"
+                android:text="省安全中心"
+                android:textColor="#4169e1"
+                android:textSize="16dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relay"
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:layout_alignLeft="@+id/relativelay123"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/relativelay123"
+            android:background="#ffffff" >
+
+            <TextView
+                android:id="@+id/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="《加强国庆期间安全防范》"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/main_text"
+                android:layout_width="wrap_content"
+                android:layout_height="104dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/title_text"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:lines="5"
+                android:text="@string/maintext"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/showmain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/main_text"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="2dp"
+                android:text="全文"
+                android:textColor="#4169e1"
+                android:textSize="15dp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

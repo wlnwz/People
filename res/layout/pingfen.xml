@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffdbdbdb"
+    android:gravity="left"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:gravity="bottom"
+        android:padding="5dip" >
+
+        <TextView
+            android:id="@+id/return001"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/return001" />
+
+        <TextView
+            android:id="@+id/name_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="出警评价"
+            android:textColor="#ff000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/sure"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignBaseline="@+id/name_textview"
+            android:layout_alignBottom="@+id/name_textview"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:text="保存"
+            android:textColor="@color/blue"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/corners_bg4" >
+
+        <TextView
+            android:id="@+id/policename"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:text="警员：000001"
+            android:textColor="#ff000000"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/policephone"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/policename"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:text="电话：18710847308"
+            android:textColor="#ff000000"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/zhuangtai"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/policephone"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:text="案件状态： 已完结 "
+            android:textSize="18dp" />
+
+        <ImageView
+            android:id="@+id/finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="28dp"
+            android:src="@drawable/finish" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativelayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/corners_bg3" >
+
+        <TextView
+            android:id="@+id/shijz"
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/timezhou"
+            android:textColor="@color/blue"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/starttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/shijz"
+            android:textColor="@color/red"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/shijz"
+            android:text="报案"
+            android:textColor="@color/red"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/overtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/shijz"
+            android:textColor="@color/blue"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/alltime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/over"
+            android:layout_alignBottom="@+id/over"
+            android:layout_centerHorizontal="true"
+            android:text="(20小时30分)"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/over"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/shijz"
+            android:layout_alignParentRight="true"
+            android:text="结案"
+            android:textColor="@color/blue"
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+
+    <RatingBar
+        android:id="@+id/ratingbar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pingfen"
+        android:layout_centerHorizontal="true"
+        android:numStars="5"
+        android:rating="4.5"
+        android:stepSize="0.25" />
+
+    <TextView
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/ratingbar2"
+        android:layout_below="@+id/ratingbar2"
+        android:text="星级评价：4.5/90分"
+        android:textColor="@color/blue"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/pingfen"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/relativelayout3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:gravity="center_vertical"
+        android:text="请您对本次出警做出评价！ "
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rating"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:background="@null"
+        android:cursorVisible="true"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="说点什么吧..."
+        android:textColor="#ff000000"
+        android:textSize="15dp" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>
